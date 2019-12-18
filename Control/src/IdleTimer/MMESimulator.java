@@ -33,7 +33,7 @@ public class MMESimulator {
 	
 	//CPU負荷の移動平均観測
 	private float averageCPU = 0;
-	private final float eta = 0.01f;
+	private final float eta = 1f;
 	
 	//MMEの情報（変動値）
 	private int timeStep;
