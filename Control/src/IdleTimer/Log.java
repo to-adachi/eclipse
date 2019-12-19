@@ -19,10 +19,10 @@ public class Log {
 		return;
 	}
 	
-	protected void output() {
+	protected void output(String logFile) {
 		PrintWriter pw = null;
 		try {
-			pw = new PrintWriter("log.csv");
+			pw = new PrintWriter(logFile);
 			for(String o : outData) {
 				pw.println(o);
 			}

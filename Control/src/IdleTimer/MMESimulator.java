@@ -105,7 +105,6 @@ public class MMESimulator {
 			}
 			timeStep++;
 		}
-		log.output();
 	}
 	
 	private Integer[] loadCalculation() {
@@ -209,6 +208,9 @@ public class MMESimulator {
 		return load;
 	}
 	
+	protected void log(String logFile) {
+		log.output(logFile);
+	}
 	protected void snapshot(String outFile) {
 		FileWriter fw;
 		BufferedWriter bw;
